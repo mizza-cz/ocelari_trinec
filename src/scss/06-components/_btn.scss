@@ -1,0 +1,41 @@
+.btn {
+  position: relative;
+  width: fit-content;
+  display: block;
+  background-color: var(--color-primary);
+  outline: none;
+  border: none;
+  color: var(--color-light);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  padding: 12px 30px 12px;
+  height: fit-content;
+  @include media-breakpoint-down(lg) {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  &:hover {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    text-decoration-color: var(--color-light);
+  }
+}
+.btn--small {
+  font-size: 16px;
+  padding: 6px 10px 7px;
+  border-radius: 5px;
+  @include media-breakpoint-down(lg) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.shopBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

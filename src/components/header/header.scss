@@ -1,0 +1,485 @@
+.header {
+  &__bottom {
+    background-color: var(--color-primary);
+    @include media-breakpoint-down(xl) {
+      position: relative;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down(xl) {
+        opacity: 0;
+        transition: all 0.3s;
+        visibility: hidden;
+        position: absolute;
+        right: 0px;
+        z-index: 10;
+        top: 51px;
+        max-width: 420px;
+        width: 100%;
+        margin-left: auto;
+        justify-content: flex-end;
+        align-items: start;
+        padding: 16px 40px 16px;
+        flex-direction: column;
+        background-color: var(--color-primary);
+      }
+      @include media-breakpoint-down(sm) {
+        padding-top: 48px;
+      }
+    }
+  }
+  &__bottom-links {
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+    gap: 28px;
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      justify-content: center;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--color-light);
+      width: 100%;
+    }
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+  &__top {
+    background-color: var(--color-light);
+    position: relative;
+
+    @include media-breakpoint-down(xl) {
+      height: 122px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url("../images/content/bg-left-header.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 50%;
+        @include media-breakpoint-down(md) {
+          background-size: cover;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: -20%;
+        bottom: 0;
+        background-image: url("../images/content/bg-header-right.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 50%;
+        @include media-breakpoint-down(md) {
+          right: -6%;
+          background-size: cover;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 212px;
+      position: relative;
+      @include media-breakpoint-down(xl) {
+        padding-left: 0;
+      }
+    }
+  }
+  &__logo {
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 154px;
+    height: 154px;
+    background-color: transparent;
+    display: block;
+    z-index: 9999;
+    transition: all 0.3s;
+    @include media-breakpoint-down(xxl) {
+      left: 0;
+    }
+    @include media-breakpoint-down(xl) {
+      width: 110px;
+      height: 110px;
+      right: 0;
+      margin: 0 auto;
+      top: 5px;
+    }
+    img {
+      background-color: transparent;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__cups {
+    padding-top: 6px;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: flex-end;
+    gap: 22px;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  &__media {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  &__languages {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    a {
+      color: var(--text-gray);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    .active {
+      color: var(--color-primary);
+      text-decoration-color: var(--color-primary);
+    }
+    li + li {
+      position: relative;
+      padding-left: 12px;
+      margin-left: 12px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 1px;
+        height: 14px;
+        background-color: var(--color-dark);
+      }
+    }
+  }
+  &__partners {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+    a {
+      display: block;
+      height: 32px;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// mobile
+.headerMobile {
+  display: none;
+  @include media-breakpoint-down(xl) {
+    display: flex;
+    height: 51px;
+    justify-content: space-between;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    li {
+      display: block;
+      height: 100%;
+    }
+    img {
+      margin-right: 4px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 20px;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: var(--color-light);
+      text-decoration-color: transparent;
+      height: 100%;
+      &:hover {
+        background: rgba(#fff, 0.2);
+      }
+    }
+  }
+}
+.navbar {
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+  }
+  &__menu {
+    padding-left: 200px;
+    display: flex;
+    height: 66px;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+      height: auto;
+      padding-left: 0;
+    }
+    &-list {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      transition: all 0.3s;
+      padding-left: 16px;
+      padding-right: 16px;
+      @include media-breakpoint-down(xl) {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &.active {
+        .dropdown-menu {
+          @media (max-width: 1240px) {
+            height: 100%;
+            display: block;
+            position: static;
+          }
+        }
+      }
+      &:hover {
+        .navbar__menu-item img {
+          transform: rotate(-180deg);
+        }
+
+        .dropdown-menu {
+          transition: all 0.8s;
+          display: block;
+          z-index: 28;
+        }
+        @include media-breakpoint-down(xl) {
+          .dropdown-menu {
+            height: 0;
+            position: static;
+            transition: all 0s;
+            display: none;
+          }
+        }
+      }
+    }
+    &-item {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+      color: var(--color-light);
+      transition: all 0.3s;
+      position: relative;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 11px;
+        height: 6px;
+        object-fit: contain;
+        margin-top: 4px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-light);
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s;
+        @include media-breakpoint-down(xl) {
+          opacity: 1;
+          visibility: visible;
+          bottom: 0;
+        }
+      }
+      @include media-breakpoint-down(xl) {
+        text-align: center;
+        margin: 0 auto;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 33;
+  width: max-content;
+  background-color: var(--color-primary);
+  top: 54px;
+  min-width: 200px;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  &__list {
+    width: 100%;
+    text-align: left;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 8px 24px;
+      color: var(--color-light);
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      @include media-breakpoint-down(xl) {
+        width: 100%;
+        text-align: center;
+        padding: 6px 0;
+      }
+      &:hover {
+        background: rgba(#fff, 0.2);
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.c-header__opener {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-light);
+  @include media-breakpoint-down(sm) {
+    padding: 0.25rem 0;
+    margin-left: auto;
+  }
+  span {
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-1px);
+    display: block;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 3px;
+      background: #fff;
+      left: 0;
+      right: 0;
+    }
+    &::before {
+      transform: translateY(-7px);
+    }
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+  @include media-breakpoint-only(xxl) {
+    display: none;
+  }
+}
+.is-nav-open .header__bottom-row {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.header__media--mobile {
+  display: none;
+  @include media-breakpoint-down(xl) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 28px;
+  }
+  .header__languages {
+    margin-left: 0;
+  }
+  .header__languages a {
+    color: var(--color-light);
+    opacity: 0.52;
+  }
+  .header__languages .active {
+    opacity: 1;
+  }
+  .header__languages li + li::before {
+    background: rgba(#fff, 0.52);
+  }
+  .social {
+    &__link:hover {
+      svg,
+      path,
+      g {
+        fill: var(--color-light) !important;
+      }
+    }
+    svg,
+    path,
+    g {
+      fill: var(--color-light) !important;
+    }
+  }
+}

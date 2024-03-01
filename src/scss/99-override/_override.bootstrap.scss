@@ -1,0 +1,28 @@
+/*! purgecss start ignore */
+.container {
+  max-width: 1304px !important;
+  padding: 0 12px !important;
+}
+
+.boxRadius {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+.boxShadow {
+  box-shadow: rgba(#000000, 0.16) 0px 3px 6px !important;
+  background-color: var(--color-light);
+}
+.mb-section {
+  margin-bottom: 36px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 24px;
+  }
+}
+.g-10 {
+  --bs-gutter-y: 10px;
+  --bs-gutter-x: 10px;
+}
+.bg-gray {
+  background-color: var(--color-gray) !important;
+}
+/*! purgecss end ignore */

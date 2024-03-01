@@ -1,0 +1,24 @@
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %}
+ 
+{% include "@components/top-section/top-section.twig" %} {% include
+"@components/fanshop-section/fanshop-section.twig" %}
+
+<div class="container">
+  <a href="#" target="_blank" class="pub pub--big boxRadius mb-section">
+    <img src="images/content/v_kapse.png" loading="lazy" alt="pub" />
+  </a>
+  <div class="row g-lg-5 g-4">
+    <div class="col-lg-6">
+      <a href="#" target="_blank" class="pub boxRadius">
+        <img src="images/content/pub-2.jpeg" loading="lazy" alt="pub" />
+      </a>
+    </div>
+    <div class="col-lg-6">
+      <a href="#" target="_blank" class="pub boxRadius">
+        <img src="images/content/pub-3.jpeg" loading="lazy" alt="pub" />
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

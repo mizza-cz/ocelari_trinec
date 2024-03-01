@@ -1,0 +1,119 @@
+.article-section {
+  position: relative;
+  z-index: 2;
+  &__inner {
+    padding-bottom: 60px;
+    margin-bottom: 12px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: rgba(#000000, 0.16) 0px 3px 6px !important;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 40px;
+    }
+  }
+  &__bottom {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+  }
+  &__box {
+    padding: 36px 42px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+      padding: 28px 24px;
+    }
+    ul,
+    ol {
+      margin: 0;
+      li + li {
+        margin-top: 40px;
+        @include media-breakpoint-down(lg) {
+          margin-top: 24px;
+        }
+      }
+    }
+    .title {
+      margin-bottom: 32px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .topstory__main {
+    aspect-ratio: 900/424;
+  }
+  .topstory__item {
+    aspect-ratio: 290/215;
+    height: 100%;
+  }
+  &__content {
+    background-color: var(--color-light);
+    padding-top: 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 16px;
+      padding-top: 16px;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
+    li + li {
+      padding-left: 7px;
+      margin-left: 6px;
+      position: relative;
+      font-weight: 500;
+      display: block;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background-color: var(--color-dark);
+        left: 0;
+        height: 1px;
+        top: 10px;
+      }
+    }
+  }
+  &__news {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 40px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+      padding: 20px;
+    }
+    span {
+      font-size: 67px;
+      line-height: 80px;
+      display: block;
+      color: var(--color-light);
+      font-weight: 700;
+      @include media-breakpoint-down(lg) {
+        font-size: 48px;
+        line-height: normal;
+      }
+    }
+    p {
+      margin: 0 !important;
+      color: var(--color-light);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

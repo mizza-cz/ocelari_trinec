@@ -1,0 +1,213 @@
+.top-section__game {
+  padding: 32px 24px 40px;
+  background-color: var(--color-light);
+  .title {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
+  }
+}
+.top-section {
+  margin-bottom: 36px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 24px;
+  }
+  &__inner {
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-only(lg) {
+      gap: 20px;
+    }
+    @include media-breakpoint-down(lg) {
+      gap: 28px;
+    }
+  }
+}
+.newGame {
+  &__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__logo {
+    width: 86px;
+    height: 86px;
+    @include media-breakpoint-down(lg) {
+      width: 80px;
+      height: 80px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__date {
+    font-weight: 700;
+  }
+  &__date-day {
+    font-size: 20px;
+    line-height: 24px;
+    @include media-breakpoint-down(lg) {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+  &__date-time {
+    font-size: 21px;
+    line-height: 25px;
+    @include media-breakpoint-down(lg) {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    span {
+      font-size: 28px;
+      line-height: 32px;
+      @include media-breakpoint-down(lg) {
+        font-size: 23px;
+        line-height: 28px;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    a {
+      max-width: 100px;
+      width: 100%;
+      display: block;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.listGames {
+  background-color: var(--color-light);
+  padding: 30px 20px;
+  margin-top: 18px;
+  margin-bottom: 36px;
+  clear: both;
+  @include media-breakpoint-down(xl) {
+    float: none;
+    clear: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-down(lg) {
+    order: 3;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      display: block;
+      height: 12px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__logo {
+    height: 48px;
+    max-width: 48px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+  &__teams {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      gap: 12px;
+    }
+  }
+  &__date {
+    @include media-breakpoint-down(lg) {
+      font-size: 15px;
+      line-height: 18px;
+      margin-top: -4px;
+    }
+  }
+  &__item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+      border: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.listGames,
+.top-section__game {
+  max-width: 28.1rem;
+  width: 100%;
+  float: right;
+  margin-left: 20px;
+  @include media-breakpoint-down(xl) {
+    margin-left: 0;
+  }
+  @include media-breakpoint-only(lg) {
+    max-width: 48.9%;
+    height: auto;
+  }
+  @include media-breakpoint-down(lg) {
+    max-width: 100%;
+  }
+}
