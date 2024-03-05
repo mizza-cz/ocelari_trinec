@@ -3,5 +3,24 @@
   z-index: 2;
   &__box {
     padding: 32px 44px;
+    margin-bottom: 36px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
+    .title {
+      margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 12px;
+      }
+    }
+    table {
+      tr td:first-child {
+        width: 320px;
+        @include media-breakpoint-down(lg) {
+          width: auto;
+          white-space: nowrap;
+        }
+      }
+    }
   }
 }

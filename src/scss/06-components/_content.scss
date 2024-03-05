@@ -95,7 +95,6 @@
     border-left: 4px solid var(--color-primary);
     width: 100%;
     margin: 40px 0;
-    background-color: adadad;
     @include media-breakpoint-down(lg) {
       margin: 24px 0;
     }
@@ -132,6 +131,30 @@
         font-size: 16px;
         line-height: 26px;
         padding-left: 32px;
+      }
+    }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    td {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      padding: 17px 16px;
+      vertical-align: middle;
+      a {
+        white-space: nowrap;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    tr {
+      border-bottom: 1px solid #adadad;
+      &:last-child {
+        border: none;
       }
     }
   }
