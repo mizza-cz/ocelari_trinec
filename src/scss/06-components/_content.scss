@@ -24,6 +24,13 @@
     > li {
       position: relative;
       padding-left: 24px;
+      ul li {
+        margin-bottom: 30px;
+        margin-top: 0;
+        &::before {
+          background-color: #adadad;
+        }
+      }
       &::before {
         content: "";
         background-color: var(--color-primary);

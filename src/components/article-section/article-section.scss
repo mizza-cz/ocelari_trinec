@@ -18,6 +18,7 @@
   &__box {
     padding: 36px 42px;
     margin-bottom: 40px;
+   
     @include media-breakpoint-down(lg) {
       margin-bottom: 24px;
       padding: 28px 24px;

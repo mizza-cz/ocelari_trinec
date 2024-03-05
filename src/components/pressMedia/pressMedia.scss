@@ -1,0 +1,9 @@
+.pressMedia {
+  .contacts-section__box .article-section__box {
+    margin-top: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+  }
+}
