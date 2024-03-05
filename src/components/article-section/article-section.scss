@@ -68,12 +68,15 @@
     @include media-breakpoint-down(lg) {
       margin-bottom: 24px;
     }
-    li + li {
-      padding-left: 7px;
-      margin-left: 6px;
+    li {
       position: relative;
       font-weight: 500;
       display: block;
+    }
+    li + li {
+      padding-left: 7px;
+      margin-left: 6px;
+
       &::before {
         content: "";
         position: absolute;
