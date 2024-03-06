@@ -1,0 +1,127 @@
+.players-section {
+  &__menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    z-index: 3;
+    padding: 24px 40px;
+    margin-bottom: 36px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+      justify-content: space-between;
+    }
+  }
+  &__label {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include media-breakpoint-down(lg) {
+      position: relative;
+      margin: 0;
+    }
+  }
+  &__box {
+    position: relative;
+    z-index: 3;
+    padding: 26px 40px 36px;
+    margin-bottom: 16px;
+    .title {
+      margin-bottom: 28px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__item {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration-color: transparent;
+
+    &:hover {
+      .players-section__num {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        color: var(--color-light);
+        font-size: 36px;
+
+        background-color: var(--color-primary);
+      }
+      .players-section__title {
+        text-decoration-color: var(--color-dark);
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    box-shadow: rgba(#000000, 0.16) 0px 0px 10px !important;
+    width: 88px;
+    height: 88px;
+    border-radius: 100%;
+    transition: all 0.4s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 100%;
+      border: 1px solid var(--color-primary);
+    }
+  }
+  &__num {
+    position: absolute;
+    left: -15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-primary);
+    border-radius: 100%;
+    border: 1px solid var(--color-primary);
+
+    background-color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(#000000, 0.16) 0px 3px 6px !important;
+    transition: all 0.3s;
+    width: 32px;
+    height: 32px;
+  }
+  &__flag {
+    box-shadow: rgba(#000000, 0.16) 0px 3px 6px !important;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    left: -15px;
+    bottom: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: none;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+  }
+  &__content {
+    p {
+      color: #adadad;
+    }
+  }
+}
