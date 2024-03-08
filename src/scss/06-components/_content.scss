@@ -151,6 +151,8 @@
       font-weight: 500;
       padding: 17px 16px;
       vertical-align: middle;
+      border-bottom: 1px solid #adadad;
+
       a {
         white-space: nowrap;
       }
@@ -159,8 +161,7 @@
       }
     }
     tr {
-      border-bottom: 1px solid #adadad;
-      &:last-child {
+      &:last-child td {
         border: none;
       }
     }

@@ -99,6 +99,9 @@
       align-items: center;
       padding-left: 212px;
       position: relative;
+      height: 56px;
+      padding-top: 6px;
+      padding-bottom: 7px;
       @include media-breakpoint-down(xl) {
         padding-left: 0;
       }
@@ -110,8 +113,8 @@
     top: 8px;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 154px;
-    height: 154px;
+    width: 144px;
+    height: 144px;
     background-color: transparent;
     display: block;
     z-index: 9999;
@@ -134,11 +137,17 @@
     }
   }
   &__cups {
-    padding-top: 6px;
-    padding-bottom: 7px;
     display: flex;
     align-items: flex-end;
-    gap: 22px;
+    gap: 10px;
+    li {
+      display: block;
+      width: 44px;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
     @include media-breakpoint-down(xl) {
       display: none;
     }

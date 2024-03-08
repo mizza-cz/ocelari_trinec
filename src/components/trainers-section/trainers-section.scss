@@ -9,7 +9,7 @@
     height: 100%;
     @include media-breakpoint-down(lg) {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
       padding-top: 20px;
@@ -18,15 +18,10 @@
   &__content {
     padding: 32px 48px;
     @include media-breakpoint-down(lg) {
-      text-align: center;
       padding: 24px;
     }
     .title {
       margin-bottom: 12px;
-      @include media-breakpoint-down(lg) {
-        margin: 0 auto 12px;
-        text-align: center;
-      }
     }
   }
   &__position {
@@ -45,6 +40,7 @@
     aspect-ratio: 296/292;
     @include media-breakpoint-down(lg) {
       float: none;
+      margin-left: auto;
     }
     img {
       width: 100%;
