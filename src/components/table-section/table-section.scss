@@ -1,0 +1,96 @@
+.table-section {
+  .dataTables_wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  th {
+    padding: 16px 28px;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  table {
+    margin-bottom: 0 !important;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    @include media-breakpoint-down(md) {
+      min-width: fit-content;
+    }
+  }
+  thead {
+    background: rgba(#adadad, 0.2);
+  }
+  th {
+    font-weight: 700;
+    vertical-align: middle;
+  }
+  th.number {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+  .number {
+    text-align: center !important;
+    width: fit-content !important;
+  }
+
+  td {
+    height: 54px;
+    vertical-align: middle;
+    font-weight: 500;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+    border-bottom: 1px solid #adadad;
+    @include media-breakpoint-down(lg) {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+  }
+  tr:last-child td {
+    border: none;
+  }
+  tr .number:last-child {
+    padding-right: 20px !important;
+    @include media-breakpoint-down(lg) {
+      padding-right: 16px !important;
+    }
+  }
+  .position {
+    text-align: left;
+    padding-left: 20px !important;
+    padding-right: 8px !important;
+    @include media-breakpoint-down(lg) {
+      padding-left: 16px !important;
+    }
+  }
+  .trinec td {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+  .club {
+    padding-left: 16px !important;
+    padding-right: 32px !important;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      width: max-content;
+    }
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      height: 42px;
+      object-fit: contain;
+      margin-right: 16px;
+    }
+  }
+}
+.dataTables_info {
+  display: none;
+}
