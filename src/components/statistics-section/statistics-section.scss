@@ -1,6 +1,12 @@
-.table-section {
-  p {
-    font-weight: 500;
+.statistics-section {
+  &__wrapper {
+    margin-bottom: 36px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
+    p {
+      font-weight: 500;
+    }
   }
   .dataTables_wrapper {
     overflow-x: auto;
@@ -42,20 +48,23 @@
     text-align: center !important;
     width: fit-content !important;
   }
-
-  td {
+  tbody tr {
     height: 54px;
+    border-bottom: 1px solid #adadad;
+  }
+  td {
     vertical-align: middle;
     font-weight: 500;
     padding-left: 28px !important;
     padding-right: 28px !important;
-    border-bottom: 1px solid #adadad;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     @include media-breakpoint-down(lg) {
       padding-left: 16px !important;
       padding-right: 16px !important;
     }
   }
-  tr:last-child td {
+  tr:last-child {
     border: none;
   }
   tr .number:last-child {
@@ -76,9 +85,9 @@
     background-color: var(--color-primary);
     color: var(--color-light);
   }
-  .club {
+  .player {
     padding-left: 16px !important;
-    padding-right: 32px !important;
+    padding-right: 28px !important;
     text-align: left;
     white-space: nowrap;
     width: 100%;
@@ -88,12 +97,50 @@
     img {
       display: inline-block;
       vertical-align: middle;
-      height: 42px;
+      height: 46px;
       object-fit: contain;
-      margin-right: 16px;
+      margin-right: 8px;
     }
   }
 }
-.dataTables_info {
-  display: none;
+
+.statistics-section__item + .statistics-section__item {
+  margin-top: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 32px;
+  }
+}
+
+.statistics-section__info {
+  .boxSection + .boxSection {
+    margin-top: 20px;
+  }
+  .title {
+    margin-bottom: 28px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &-list {
+    li {
+      display: flex;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    li + li {
+      margin-top: 10px;
+    }
+    span {
+      color: var(--color-primary);
+      font-weight: 700;
+      display: block;
+      width: 40px;
+      padding-right: 12px;
+    }
+  }
 }
