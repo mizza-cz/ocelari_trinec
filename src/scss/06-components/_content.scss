@@ -145,6 +145,9 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 100%;
+    tr:last-child td {
+      padding-bottom: 0 !important;
+    }
     td {
       font-size: 18px;
       line-height: 22px;
@@ -169,7 +172,7 @@
 }
 .p1 {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 27px;
   @include media-breakpoint-down(lg) {
     font-size: 16px;
     line-height: 26px;

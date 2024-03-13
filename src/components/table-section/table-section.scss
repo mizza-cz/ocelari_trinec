@@ -5,6 +5,17 @@
   .dataTables_wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    table {
+      @include media-breakpoint-down(lg) {
+        min-width: max-content;
+      }
+    }
+    th,
+    td {
+      @include media-breakpoint-down(lg) {
+        width: auto !important;
+      }
+    }
   }
   &__descr {
     color: var(--color-primary);
@@ -82,13 +93,14 @@
     text-align: left;
     white-space: nowrap;
     width: 100%;
-    @include media-breakpoint-down(lg) {
-      width: max-content;
-    }
+    // @include media-breakpoint-down(lg) {
+    //   width: max-content;
+    // }
     img {
       display: inline-block;
       vertical-align: middle;
       height: 42px;
+      width: 42px;
       object-fit: contain;
       margin-right: 16px;
     }

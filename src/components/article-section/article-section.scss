@@ -15,31 +15,7 @@
     border-radius: 0 0 10px 10px;
     overflow: hidden;
   }
-  &__box {
-    padding: 36px 42px;
-    margin-bottom: 40px;
-   
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 24px;
-      padding: 28px 24px;
-    }
-    ul,
-    ol {
-      margin: 0;
-      li + li {
-        margin-top: 40px;
-        @include media-breakpoint-down(lg) {
-          margin-top: 24px;
-        }
-      }
-    }
-    .title {
-      margin-bottom: 32px;
-      @include media-breakpoint-down(lg) {
-        margin-bottom: 24px;
-      }
-    }
-  }
+
   .topstory__main {
     aspect-ratio: 900/424;
   }

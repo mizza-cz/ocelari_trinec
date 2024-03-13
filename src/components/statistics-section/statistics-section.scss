@@ -8,6 +8,18 @@
       font-weight: 500;
     }
   }
+  table {
+    @include media-breakpoint-down(lg) {
+      min-width: max-content;
+      th,
+      td,
+      .player {
+        @include media-breakpoint-down(lg) {
+          width: auto !important;
+        }
+      }
+    }
+  }
   .dataTables_wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -91,15 +103,14 @@
     text-align: left;
     white-space: nowrap;
     width: 100%;
-    @include media-breakpoint-down(lg) {
-      width: max-content;
-    }
+
     img {
       display: inline-block;
       vertical-align: middle;
       height: 46px;
       object-fit: contain;
       margin-right: 8px;
+      width: 46px;
     }
   }
 }

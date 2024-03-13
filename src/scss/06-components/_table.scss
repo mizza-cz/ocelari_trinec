@@ -1,0 +1,17 @@
+.o-content {
+  table {
+    @include media-breakpoint-down(lg) {
+      // min-width: max-content;
+      min-width: 800px;
+    }
+  }
+  thead {
+    background: rgba(#adadad, 0.2);
+  }
+  th {
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 16px 28px;
+    text-align: left;
+  }
+}
