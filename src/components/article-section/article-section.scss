@@ -18,6 +18,18 @@
 
   .topstory__main {
     aspect-ratio: 900/424;
+    h1 {
+      padding-left: 60px;
+      padding-right: 60px;
+      @include media-breakpoint-down(lg) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding-left: 16px;
+        padding-top: 16px;
+      }
+    }
   }
   .topstory__item {
     aspect-ratio: 290/215;

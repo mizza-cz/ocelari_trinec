@@ -1,5 +1,6 @@
 .o-content {
   table {
+    margin-bottom: 0;
     @include media-breakpoint-down(lg) {
       // min-width: max-content;
       min-width: 800px;

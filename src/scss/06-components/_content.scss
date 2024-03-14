@@ -145,9 +145,7 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 100%;
-    tr:last-child td {
-      padding-bottom: 0 !important;
-    }
+
     td {
       font-size: 18px;
       line-height: 22px;
@@ -210,4 +208,6 @@
 
 .perex {
   font-weight: 600;
+  line-height: 1.875rem;
+  font-size: 18px;
 }
