@@ -7,6 +7,9 @@
 .boxRadius {
   border-radius: 10px !important;
   overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 .boxShadow {
   box-shadow: rgba(#000000, 0.16) 0px 3px 6px !important;
