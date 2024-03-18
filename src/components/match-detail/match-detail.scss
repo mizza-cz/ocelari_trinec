@@ -283,6 +283,9 @@
       background-color: #adadad;
       left: 0;
       top: 68px;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
     }
   }
 }
