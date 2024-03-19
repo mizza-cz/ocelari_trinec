@@ -1,0 +1,240 @@
+.lastGame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+    span {
+      width: 36px;
+      height: 36px;
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__logo {
+    width: 110px;
+    height: 110px;
+    @include media-breakpoint-down(md) {
+      width: 88px;
+      height: 88px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__info {
+    @include media-breakpoint-down(lg) {
+      order: -1;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__date {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  &__teams {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  &__result {
+    text-align: right;
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+      margin-top: 8px;
+    }
+    p {
+      font-weight: 500;
+      margin-top: 8px;
+      display: block;
+    }
+  }
+  &__result-count {
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 80px;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    @include media-breakpoint-down(xl) {
+      font-size: 54px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: transparent;
+    }
+  }
+  .win,
+  .lose {
+    padding-bottom: 8px;
+  }
+  &__result-count.win::before {
+    background-color: var(--color-green);
+  }
+  &__result-count.lose::before {
+    background-color: var(--color-primary);
+  }
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 48px;
+    @include media-breakpoint-down(lg) {
+      padding-right: 0;
+      margin-bottom: 24px;
+    }
+    span {
+      width: 22px;
+      height: 22px;
+      display: block;
+      img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+      }
+    }
+  }
+  &__logo {
+    width: 66px;
+    height: 66px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+  &__league {
+    color: #adadad;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__partners {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    @include media-breakpoint-only(lg) {
+      flex-direction: column;
+    }
+  }
+  &__partner {
+    max-width: 86px;
+    height: 16px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 0;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 16px;
+      gap: 16px;
+    }
+  }
+  &__date {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 200px;
+    padding-right: 28px;
+    @include media-breakpoint-down(lg) {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 20px;
+      order: -1;
+    }
+  }
+  &__teams {
+    font-weight: 500;
+    font-size: 18px;
+    padding-right: 48px;
+    @include media-breakpoint-down(lg) {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+  }
+  &__result {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include media-breakpoint-only(lg) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+    }
+    .win {
+      color: var(--color-green);
+    }
+    .lose {
+      color: var(--color-primary);
+    }
+    a {
+      display: block;
+      font-weight: 700;
+      font-size: 30px;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    span {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      color: #adadad;
+    }
+  }
+}
+
+.games-section {
+  &__inner {
+    margin-top: 48px;
+  }
+}
+
+.game + .game {
+  padding-top: 22px;
+  margin-top: 22px;
+  border-top: 1px solid #cccccc;
+}
