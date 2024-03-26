@@ -68,11 +68,14 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        background-image: url("../images/content/bg-left-header.png");
+
+        background-image: linear-gradient(to right, transparent 75%, #fff 100%),
+          url("../images/content/dsds.png");
         background-repeat: no-repeat;
         background-size: contain;
         height: 100%;
         width: 50%;
+        max-width: 268px;
         @include media-breakpoint-down(md) {
           background-size: cover;
         }
@@ -82,7 +85,8 @@
         position: absolute;
         right: -20%;
         bottom: 0;
-        background-image: url("../images/content/bg-header-right.png");
+        background-image: linear-gradient(to left, transparent 75%, #fff 100%),
+          url("../images/content/bg-header-right.png");
         background-repeat: no-repeat;
         background-size: contain;
         height: 100%;

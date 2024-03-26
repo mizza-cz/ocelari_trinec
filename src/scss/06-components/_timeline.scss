@@ -77,6 +77,9 @@
   padding-right: 48px;
   clear: left;
   padding-bottom: 80px;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
   @include media-breakpoint-down(md) {
     padding-bottom: 48px;
   }
@@ -107,6 +110,16 @@
       left: 18px;
     }
   }
+  .timeline__point {
+    right: 0;
+    justify-content: flex-end;
+    right: -56px;
+    @include media-breakpoint-down(md) {
+      left: -0.25rem;
+      justify-content: flex-start;
+      margin-left: -56px;
+    }
+  }
 }
 .timeline__right {
   float: right;
@@ -119,8 +132,6 @@
   }
   .timeline__point {
     margin-left: -56px;
-    @include media-breakpoint-down(md) {
-    }
   }
   .timeline__date {
     left: 0;
@@ -165,6 +176,50 @@
     top: -3%;
     @include media-breakpoint-down(md) {
       top: -24px;
+    }
+  }
+}
+
+#time-2015 {
+  padding-top: 100px;
+  @include media-breakpoint-down(md) {
+    padding-top: 60px;
+  }
+  .boxSection {
+    overflow: inherit;
+  }
+}
+
+.timeline__logo {
+  width: 148px;
+  height: 148px;
+  margin-top: -110px;
+  z-index: 10;
+  @include media-breakpoint-down(lg) {
+    margin-top: -72px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+    margin-left: auto;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.timeline__header {
+  display: flex;
+  justify-content: space-between;
+  @include media-breakpoint-down(lg) {
+    flex-direction: column-reverse;
+  }
+}
+#time-web {
+  .timeline__header {
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
     }
   }
 }
