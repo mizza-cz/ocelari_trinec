@@ -16,3 +16,103 @@
     text-align: left;
   }
 }
+
+.tableBox {
+  display: flex;
+  margin-bottom: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  flex-wrap: wrap;
+
+  &__item {
+    max-width: 50%;
+    flex: 0 50%;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      flex: 100%;
+    }
+  }
+  &__item + &__item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 52px;
+      width: 1px;
+      height: 100%;
+      background-color: #adadad;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    height: 100%;
+  }
+  thead {
+    background: rgba(#adadad, 0.2);
+  }
+  th {
+    vertical-align: middle;
+    text-align: left;
+    font-weight: 700;
+    padding: 16px 52px;
+    @include media-breakpoint-down(md) {
+      padding: 16px 24px;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+  tbody tr {
+    border-bottom: 1px solid #adadad;
+    &:last-child {
+      @include media-breakpoint-down(lg) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  td {
+    font-weight: 500;
+    padding: 16px 52px;
+    height: 52px;
+
+    @include media-breakpoint-down(md) {
+      padding: 16px 24px;
+      height: fit-content;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.tableBox__multi {
+  .tableBox__item {
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+    @include media-breakpoint-down(xl) {
+      flex: 100%;
+      max-width: 100%;
+      &::before {
+        display: none;
+      }
+    }
+    tbody tr:last-child {
+      @include media-breakpoint-down(xl) {
+        border-bottom: none;
+      }
+    }
+    th,
+    td {
+      padding: 16px 24px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.hospitality-section {
+  .article-section__bottom {
+   //  @include media-breakpoint-down(md) {
+   //    flex-direction: column;
+   //    display: flex;
+   //  }
+  }
+  &__equipment {
+    display: flex;
+    align-items: center;
+    gap: 40px 100px;
+    @include media-breakpoint-down(md) {
+      align-items: flex-start;
+      gap: 40px;
+      flex-direction: column;
+    }
+  }
+  &__equipment-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 20px;
+
+    img {
+      max-height: 40px;
+      max-width: 54px;
+      @include media-breakpoint-down(md) {
+        min-width: 54px;
+      }
+    }
+  }
+}
