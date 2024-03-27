@@ -1,0 +1,148 @@
+.ticketInformation {
+  .game__partners {
+    flex-direction: row !important;
+  }
+  .game__links {
+    @include media-breakpoint-down(lg) {
+      margin-left: auto;
+      margin-top: 0;
+    }
+  }
+  .game__date {
+    margin-bottom: 0;
+    @include media-breakpoint-down(md) {
+      order: 0;
+      font-size: 18px;
+    }
+  }
+  .game__teams {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-down(md) {
+      order: -1;
+    }
+  }
+  .game {
+    .category {
+      @include media-breakpoint-down(lg) {
+        width: 100px !important;
+        height: 29px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      flex-direction: row;
+      gap: 12px;
+      align-items: center;
+    }
+  }
+  .game__logo,
+  .game__logos span {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  .game__logos {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0;
+    }
+  }
+  .game__logo--mobile {
+    @include media-breakpoint-down(lg) {
+      display: block;
+    }
+  }
+  &__arena {
+    width: 100%;
+    aspect-ratio: 1030/871;
+    margin-bottom: 60px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__table {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    @include media-breakpoint-down(sm) {
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    overflow: hidden;
+    thead th {
+      background: rgba(#adadad, 0.2);
+    }
+    th,
+    td {
+      padding: 18px 44px !important;
+      text-align: left;
+      font-size: 16px;
+      line-height: 19px;
+      @include media-breakpoint-down(lg) {
+        padding: 14px !important;
+      }
+    }
+    td {
+      vertical-align: middle;
+      border-bottom: 1px solid #adadad;
+      font-weight: 500;
+      a {
+        white-space: nowrap;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    tr {
+      &:last-child td {
+        border: none;
+      }
+    }
+  }
+
+  .category {
+    width: 118px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    @include media-breakpoint-down(lg) {
+      width: 36px;
+    }
+  }
+  .category--yellow {
+    background-color: #feed2d;
+  }
+  .category--red {
+    background-color: #e31e25;
+    color: var(--color-light);
+  }
+  .category--gray {
+    background-color: #adadad;
+  }
+  .category--blue {
+    background-color: #4fccfa;
+  }
+  .category--green {
+    background-color: #99c12a;
+  }
+}
+.game__infoBox {
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-only(md) {
+    gap: 24px;
+    padding-left: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
