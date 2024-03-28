@@ -1,7 +1,3 @@
-{% extends "@components/base/base.twig" %} {% set title = "03.0_player-detail" %} {%
-block main %}
-
-<div class="container">
-  <div class="aaa">fmdl;m fkdlmfdkl</div>
-</div>
-{% endblock %}
+{% extends "@components/base/base.twig" %} {% set title = "03.0_player-detail"
+%} {% block main %} {% include "@components/player-detail/player-detail.twig" %}
+{% include "@components/player-content/player-content.twig" %} {% endblock %}
