@@ -7,6 +7,8 @@ function openGallery(data, start) {
 
   const lightbox = new FsLightbox();
   lightbox.props.sources = data;
+  lightbox.props.type = "image";
+  lightbox.props.showThumbsOnMount = true;
   lightbox.open(start ?? 0);
 }
 
