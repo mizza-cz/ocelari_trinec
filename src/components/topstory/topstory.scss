@@ -1,6 +1,5 @@
 .topstory {
   border-radius: 10px;
-  overflow: hidden;
   @include media-breakpoint-down(xl) {
     clear: both;
     width: 100%;
@@ -9,8 +8,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    // border-radius: 10px;
+    // overflow: hidden;
+  }
+}
+.topstory__inner .row .col-6:first-child .topstory__item {
+  border-bottom-left-radius: 10px;
+}
+.topstory__inner .row .col-6:nth-child(2) .topstory__item {
+  @include media-breakpoint-down(md) {
+    border-bottom-right-radius: 10px;
+  }
+}
+.topstory__inner .topstory__news {
+  border-bottom-right-radius: 10px;
+  @include media-breakpoint-down(md) {
     border-radius: 10px;
-    overflow: hidden;
   }
 }
 .topstory__item {
@@ -52,7 +65,7 @@
   display: block;
   width: 100%;
   position: relative;
-  aspect-ratio: 759/424;
+  aspect-ratio: 759/396;
   h1 {
     position: absolute;
     bottom: 0;
