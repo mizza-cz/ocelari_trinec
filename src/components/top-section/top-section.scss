@@ -219,3 +219,44 @@
     max-width: 100%;
   }
 }
+
+.juniorsTop-section {
+  .top-section__game {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .top-section__game .title {
+    margin-bottom: 0;
+  }
+  .listGames__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .listGames__teams {
+    width: auto;
+    margin: 0;
+  }
+  .listGames__item {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  .listGames {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 22px;
+  }
+  .listGames__item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .listGames + .listGames {
+    margin-top: 1.125rem;
+    @include media-breakpoint-down(xl) {
+      margin-top: 0 !important;
+    }
+  }
+}
