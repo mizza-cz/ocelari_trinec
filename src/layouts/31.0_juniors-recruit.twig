@@ -1,237 +1,90 @@
-{% extends "@components/base/base.twig" %} {% set title = "31.0_juniors-recruit" %} {%
-block main %}
+{% extends "@components/base/base.twig" %} {% set title = "31.0_juniors-recruit"
+%} {% block main %}
 
-<section class="games-section">
+<section class="utilizationTickets">
   <div class="container">
     <div class="boxSection">
-      <div class="d-flex justify-content-between flex-wrap align-center gap-2">
-        <h1 class="title">Poslední odehraný zápas</h1>
-        <a href="#" class="link link--decore"> Všechny odehrané zápasy </a>
+      <h1 class="title">NÁBOR MLADÝCH OCELÁŘŮ</h1>
+      <p class="p1">
+        Hokejový klub HC Oceláři Třinec hledá chlapce i dívky do přípravky -
+        <strong>ročníky 2016 a mladší.</strong>
+      </p>
+      <p class="p1">
+        Nebojte se přivést své dítě k nám. Nevadí, že neumí bruslit. Pod vedením
+        profesionálních trenérů jej základy bruslení naučíme.
+      </p>
+      <p class="p1">Děti získají mnoho nových kamarádů a zážitků.</p>
+      <p class="p1 mt-5">
+        <strong
+          >Staň se Ocelářem. Nepropásni šanci stát se třineckým
+          hokejistou!</strong
+        >
+      </p>
+      <div class="boxRadius my-5">
+        <iframe
+          src="//www.youtube.com/embed/qvvsleBWmh4"
+          allowfullscreen=""
+          style="width: 100%; height: 415px"
+          frameborder="0"
+          ><span
+            id="selection-marker-1"
+            class="redactor-selection-marker"
+          ></span>
+        </iframe>
       </div>
-      <div class="lastGame">
-        <div class="lastGame__logos">
-          <div class="lastGame__logo">
-            <img src="images/ico/logo.svg" alt="" />
+      <div class="utilizationTickets__wrapper">
+        <div class="boxGray">
+          <h2 class="title">KDY MOHU PŘIJÍT?</h2>
+          <p>
+            Tréninky nejmenších hokejistů probíhají v Mini WERK ARENĚ každou
+            sobotu a neděli v ranních hodinách.
+          </p>
+          <a href="#" class="btn btn-primary mt-4">Rozpis tréninků</a>
+        </div>
+        <div class="boxGray">
+          <h3 class="title">CO POTŘEBUJI?</h3>
+          <p>
+            Na první trénink je třeba přilbu (stačí lyžařská, na kolo), teplé
+            oblečení a zimní rukavice. Brusle zapůjčíme. Jakmile dítě zvládne
+            bruslení, bude mu zapůjčena kompletní hokejová výstroj.
+          </p>
+        </div>
+        <div class="boxGray">
+          <h3 class="title">PRO KOHO JE PŘÍPRAVKA?</h3>
+          <p>Přípravka je pro děti od 4 let.</p>
+        </div>
+        <div class="boxGray">
+          <h3 class="title">ORGANIZACE TRÉNINKŮ</h3>
+          <p>
+            Děti se převlékají v šatně. Na ledě jsou děti rozděleny dle věku a
+            výkonnosti. Trénink trvá přibližně 1 hodinu. Každá skupinka má svého
+            trenéra, který se ji věnuje po celou dobu na ledě.
+          </p>
+          <div class="boxRadius mt-5">
+            <img src="images/content/recruit.jpeg" loading="lazy" alt="" />
           </div>
-          <span>
-            <img src="images/content/x.png" alt="" />
-          </span>
-          <div class="lastGame__logo">
-            <img src="images/content/klub-1.png" alt="" />
-          </div>
         </div>
-        <div class="lastGame__info">
-          <div class="lastGame__date">Pá 28. 11. 18:30</div>
-          <div class="lastGame__teams">Třinec - Litvínov</div>
-        </div>
-        <div class="lastGame__links">
-          <div class="game__league mb-3">Tipsport extraliga</div>
-        </div>
-        <div class="lastGame__result">
-          <a href="#" class="lastGame__result-count win">2 : 3SN</a>
-          <p>(1:1, 0:1, 1:0 - 0:0)</p>
-        </div>
-      </div>
-    </div>
-    <div class="boxSection">
-      <div class="d-flex justify-content-between flex-wrap align-center gap-2">
-        <h2 class="title">Nejbližší zápasy</h2>
-        <a href="#" class="link link--decore"> Všechny budoucí zápasy </a>
-      </div>
-      <div class="games-section__inner">
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Tipsport extraliga</div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Liga mistrů</div>
-          <div class="game__links"></div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
+        <div class="boxGray">
+          <h3 class="title">DŮLEŽITÉ!</h3>
+          <p>
+            Nikdo z trenérů nepředpokládá, že do přípravky nastoupí perfektní
+            bruslař. Hokejová přípravka je od toho, abychom děti naučili prvním
+            krůčkům na ledě a postupně zvládli bruslařské dovednosti.
+          </p>
         </div>
       </div>
     </div>
+
     <div class="boxSection">
-      <h3 class="title">Tipsport Extraliga 2023/24</h3>
-      <div class="games-section__inner games-section__all">
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Tipsport extraliga</div>
-          <div class="game__links">
-            <div class="game__result">
-              <span>(1:1, 0:1, 1:0)</span>
-              <a href="#" class="lose">2:3</a>
-            </div>
-          </div>
+      <h5 class="title">NEVÁHEJTE A PŘIJĎTE MEZI OCELÁŘE</h5>
+      <div class="utilizationTickets__contact">
+        <div class="utilizationTickets__contact-img">
+          <img src="images/content/linka.png" alt="" />
         </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Liga mistrů</div>
-          <div class="game__links">
-            <div class="game__result">
-              <span>(1:1, 0:1, 1:0)</span>
-              <a href="#" class="win">3:4</a>
-            </div>
-          </div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
-        </div>
-        <div class="game">
-          <div class="game__logos">
-            <div class="game__logo">
-              <img src="images/ico/logo.svg" alt="" />
-            </div>
-            <span>
-              <img src="images/content/x.png" alt="" />
-            </span>
-            <div class="game__logo">
-              <img src="images/content/klub-1.png" alt="" />
-            </div>
-          </div>
-          <div class="game__date">Pá 28. 11. 18:30</div>
-          <div class="game__teams">Třinec - Litvínov</div>
-          <div class="game__league">Spengler cup</div>
+        <div class="utilizationTickets__contact-info">
+          <p>Aleš Mach / Hlavní trenér přípravky</p>
+          <a href="tel:+420602171088">+420 602 171 088</a>
+          <a href="mailto:ales.mach@hcotrinec.cz">ales.mach@hcotrinec.cz</a>
         </div>
       </div>
     </div>
