@@ -142,14 +142,18 @@
   &__cups {
     display: flex;
     align-items: flex-end;
-    gap: 10px;
+    gap: 1rem;
     li {
       display: block;
-      width: 44px;
+      width: auto;
+      height: 40px;
     }
     img {
       display: block;
       margin: auto;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
     }
     @include media-breakpoint-down(xl) {
       display: none;
