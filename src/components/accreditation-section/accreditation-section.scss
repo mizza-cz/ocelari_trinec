@@ -1,0 +1,36 @@
+.accreditationForm__file {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  label {
+    display: block;
+    font-weight: 500;
+  }
+}
+
+.accreditationForm {
+  .select2-container--default .select2-selection--single {
+    width: 100%;
+    border-radius: 0;
+    height: 48px;
+    border-top: none;
+    border-left: none !important;
+    border-right: none !important;
+    padding-left: 0;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    top: 20px;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: gray;
+    padding-left: 0;
+  }
+  .select2-container--open .select2-selection--single {
+    outline-color: transparent;
+  }
+}
