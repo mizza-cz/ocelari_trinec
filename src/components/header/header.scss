@@ -374,6 +374,7 @@
   border-radius: 0px 0px 4px 4px;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
   @include media-breakpoint-down(xl) {
     width: 100%;
     padding-bottom: 0;
@@ -500,4 +501,23 @@
       fill: var(--color-light) !important;
     }
   }
+}
+
+.dropdown-submenu {
+  display: none !important;
+  left: 100% !important;
+  top: 0 !important;
+  position: absolute;
+}
+
+.dropdown-submenu.show {
+  display: block !important;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--color-light);
+  background-color: var(--color-primary);
+}
+.dropdown-toggle::after {
+  vertical-align: middle;
 }
