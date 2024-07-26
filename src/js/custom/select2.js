@@ -1,4 +1,4 @@
-$(".js-select").select2({
+$(".js-select, .accreditation-select").select2({
   width: "100%",
   minimumResultsForSearch: -1,
 });
