@@ -3,7 +3,7 @@
     margin-bottom: 0;
     @include media-breakpoint-down(lg) {
       // min-width: max-content;
-      min-width: 800px;
+      // min-width: 800px;
     }
   }
   thead {
@@ -81,11 +81,11 @@
 
   td {
     font-weight: 500;
-    padding: 16px 52px;
+    padding: 16px 52px !important;
     height: 52px;
 
     @include media-breakpoint-down(md) {
-      padding: 16px 24px;
+      padding: 16px 24px !important;
       height: fit-content;
     }
     &:last-child {

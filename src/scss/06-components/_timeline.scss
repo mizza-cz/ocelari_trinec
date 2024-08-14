@@ -13,6 +13,9 @@
 }
 .timeline__content {
   position: relative;
+  .o-content img {
+    object-fit: cover;
+  }
 }
 .timeline__line {
   padding-top: 20%;
@@ -71,7 +74,11 @@
     transform: translateX(-1px);
   }
 }
-
+.timeline__item:nth-child(odd):first-child {
+  .timeline__date {
+    top: 0;
+  }
+}
 .timeline__item:nth-child(odd) {
   float: left;
   padding-right: 48px;
@@ -85,6 +92,7 @@
   }
   .timeline__date {
     right: 0;
+    top: 38%;
     transform: translateX(50%);
     @include media-breakpoint-down(md) {
       left: 0;
