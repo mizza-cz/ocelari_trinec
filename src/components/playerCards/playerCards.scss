@@ -118,6 +118,12 @@
 }
 
 .styled-input-single {
+  margin-bottom: 8px;
+  label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
   input[type="checkbox"] {
     position: absolute;
 
@@ -127,6 +133,70 @@
       &:after {
         opacity: 1;
       }
+    }
+  }
+}
+
+.playerCards__form {
+  option {
+    font-size: 1.125rem;
+    margin-bottom: 4px;
+  }
+  select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  .btn {
+    width: 120px;
+    text-align: center;
+    font-weight: 700;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    aspect-ratio: 1;
+    border: calc(1em / 8) solid #020024;
+    padding: calc(1em / 8);
+    background: radial-gradient(farthest-side, #c8141e 94%, #0000) 50%/0 0
+      no-repeat content-box;
+    border-radius: 50%;
+    outline-offset: calc(1em / 10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: 0.3s;
+    margin-top: 2px;
+  }
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    border-color: #c8141e;
+    background-size: 100% 100%;
+  }
+  input[type="checkbox"]:disabled,
+  input[type="radio"]:disabled {
+    background: linear-gradient(#939393 0 0) 50%/100% 20% no-repeat content-box;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @media print {
+    input[type="checkbox"],
+    input[type="radio"] {
+      -webkit-appearance: auto;
+      -moz-appearance: auto;
+      appearance: auto;
+      background: none;
     }
   }
 }
