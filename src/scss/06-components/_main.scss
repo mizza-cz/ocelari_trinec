@@ -18,7 +18,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, transparent 75%, #f5f5f5 100%),
-      url("../images/content/dsds.png");
+      url("/assets/images/content/dsds.png");
 
     @include media-breakpoint-down(xl) {
       display: none;
@@ -31,7 +31,7 @@
     bottom: 0;
 
     background-image: linear-gradient(to left, transparent 65%, #f5f5f5 100%),
-      url("../images/content/right-main.png");
+      url("/assets/images/content/right-main.png");
     height: 351px;
     width: 100%;
     max-width: 1031px;
