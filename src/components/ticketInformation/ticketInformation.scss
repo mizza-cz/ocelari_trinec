@@ -1,4 +1,8 @@
 .ticketInformation {
+  .o-content p img {
+    width: 100% !important;
+    height: auto !important;
+  }
   .game__partners {
     flex-direction: row !important;
   }

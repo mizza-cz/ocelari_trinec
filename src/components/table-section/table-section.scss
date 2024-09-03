@@ -1,4 +1,7 @@
 .table-section {
+  .boxFilter__form {
+    margin-bottom: 20px;
+  }
   p {
     font-weight: 500;
   }
@@ -24,6 +27,9 @@
   }
   .title {
     margin-bottom: 20px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
   }
   table {
     margin-bottom: 0 !important;
