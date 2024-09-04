@@ -10,11 +10,31 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    align-items: stretch;
+  }
+  .slick-track {
+    display: flex !important;
+    height: 100%;
+  }
+  .slick-slide {
+    display: flex !important;
+  }
+  .slick-slide,
+  .slick-slide > div {
+    height: 100%;
   }
 }
-
+.fanshop-section .slick-slide {
+  .fanshop__item {
+    height: 100%;
+  }
+}
 .fanshop__item {
+  max-width: 310px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex !important;
+  flex-direction: column;
   &-img {
     width: 100%;
     aspect-ratio: 214/151;
@@ -55,7 +75,7 @@
   &-link {
     text-decoration: none;
     display: block;
-
+    flex: 1 0 auto;
     &:hover {
       .fanshop__item-img {
         transform: scale(1.05);
