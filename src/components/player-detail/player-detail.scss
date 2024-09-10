@@ -126,13 +126,36 @@
       td {
         font-size: 20px;
         font-weight: 500;
+        padding: 1rem 1rem !important;
       }
       td:first-child {
         width: 100%;
       }
       td:last-child {
-        padding-right: 20px;
+        white-space: nowrap;
       }
+    }
+  }
+}
+
+#junCareer {
+  h4 {
+    margin-bottom: 16px;
+  }
+  td img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+  }
+  .table-responsive + h4 {
+    margin-top: 40px;
+  }
+
+  table {
+    th:nth-child(2),
+    td:nth-child(2) {
+      gap: 20px;
+      text-align: left;
     }
   }
 }
