@@ -23,6 +23,7 @@
         padding: 16px 40px 16px;
         flex-direction: column;
         background-color: var(--color-primary);
+        display: none;
       }
       @include media-breakpoint-down(sm) {
         padding-top: 48px;
@@ -465,6 +466,7 @@
   visibility: visible;
   transition: all 0.3s;
   z-index: 999;
+  display: block;
 }
 
 .header__media--mobile {
