@@ -142,11 +142,12 @@
   &__cups {
     display: flex;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 12px;
     li {
       display: block;
       width: auto;
       height: 40px;
+      width: 28px;
     }
     img,
     svg {
