@@ -293,7 +293,7 @@
           }
         }
       }
-      &:hover {
+      &.active {
         .navbar__menu-item img {
           transform: rotate(-180deg);
         }
