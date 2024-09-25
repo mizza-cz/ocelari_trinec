@@ -9,7 +9,6 @@ function openGallery(data, start) {
   lightbox.props.sources = data;
   lightbox.props.type = "image";
   lightbox.props.showThumbsOnMount = true;
-  lightbox.props.thumbs = true;
   lightbox.open(start ?? 0);
 }
 
