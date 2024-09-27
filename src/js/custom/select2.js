@@ -1,29 +1,27 @@
-// Инициализируем Select2
 $(".js-select, .accreditation-select").select2({
   width: "100%",
   minimumResultsForSearch: -1,
 });
 
-// Проверяем, что это Safari
-function isSafari() {
-  return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+function isMobileSafari() {
+  const ua = navigator.userAgent;
+  return (
+    /iP(ad|hone|od).+Version\/[\d.]+.*Safari/i.test(ua) &&
+    !/CriOS|Chrome/i.test(ua)
+  );
 }
 
-// Обработчик для симуляции бага
-$(document).on("select2:open", function (e) {
-  let select = $(e.target);
+if (isMobileSafari()) {
+  $(document).on("select2:open", function (e) {
+    let select = $(e.target);
 
-  if (isSafari()) {
-    // Сброс pointer-events для включения стандартного выпадающего списка
-    $(".select2-container--open").css("pointer-events", "none");
+    select.select2("close");
 
-    // Небольшая задержка для обеспечения одновременного открытия двух дропдаунов
     setTimeout(function () {
-      select.select2("close"); // Закрываем select2, чтобы появился стандартный select
-      select.trigger("focus"); // Фокусируемся на стандартном select
-    }, 0);
-  }
-});
+      select.focus().click();
+    }, 100);
+  });
+}
 
 $(function () {
   //presmerovani pomoci selectu
