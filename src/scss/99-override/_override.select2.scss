@@ -53,7 +53,7 @@
   right: 12px;
   width: 10px;
   b {
-    background-image: url("../images/ico/select.svg");
+    background-image: url("/assets/images/ico/select.svg");
     background-repeat: no-repeat;
     background-size: contain;
     border: none;
@@ -134,5 +134,13 @@
     .select2-selection--single {
     background-color: var(--color-primary) !important;
   }
+}
+
+.select2-container .select2-dropdown,
+.select2.select2-container,
+.select2-search--dropdown .select2-search__field {
+  -webkit-appearance: none !important;
+
+  -webkit-font-smoothing: antialised;
 }
 /*! purgecss end ignore */
