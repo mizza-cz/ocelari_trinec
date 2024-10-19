@@ -28,10 +28,14 @@ function sortTable(table, sortClass) {
 
 window.onload = function () {
   const goalkeeperTable = document.getElementById("goalkeeperTable");
-  sortTable(goalkeeperTable, ".sort-usp");
+  if (goalkeeperTable) {
+    sortTable(goalkeeperTable, ".sort-usp");
+  }
 
   const filterTables = document.querySelectorAll(".filter-b-table");
   filterTables.forEach(function (table) {
-    sortTable(table, ".sortable-b");
+    if (table) {
+      sortTable(table, ".sortable-b");
+    }
   });
 };
