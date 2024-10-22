@@ -270,6 +270,7 @@
     grid-area: 3 / 4 / 5 / 6;
     @include media-breakpoint-down(xl) {
       margin-top: 0 !important;
+      order: -2;
     }
   }
 }
