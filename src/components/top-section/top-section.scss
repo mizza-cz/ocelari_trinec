@@ -260,8 +260,14 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
+  .listGames {
+    grid-area: 1 / 4 / 3 / 6;
+
+    margin-top: 0;
+  }
   .listGames + .listGames {
     margin-top: 1.125rem;
+    grid-area: 3 / 4 / 5 / 6;
     @include media-breakpoint-down(xl) {
       margin-top: 0 !important;
     }
