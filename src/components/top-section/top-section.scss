@@ -37,18 +37,26 @@
     gap: 20px;
     align-items: center;
     margin-bottom: 32px;
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__logos {
     display: flex;
     align-items: center;
     gap: 12px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      justify-content: center;
+    }
   }
   &__logo {
-    width: 86px;
-    height: 86px;
+    width: 78px;
+    height: 78px;
     @include media-breakpoint-down(lg) {
-      width: 80px;
-      height: 80px;
+      width: 72px;
+      height: 72px;
     }
     img {
       width: 100%;
@@ -58,6 +66,14 @@
   }
   &__date {
     font-weight: 700;
+  }
+  &__date-logo {
+    width: 3.5rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   &__date-day {
     font-size: 20px;
@@ -88,6 +104,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__links {
     display: flex;
