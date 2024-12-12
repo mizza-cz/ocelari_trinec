@@ -100,7 +100,7 @@
     }
   }
   @include media-breakpoint-down(md) {
-    padding-left: 72px;
+    padding-left: 5.2rem;
     padding-right: 0;
     float: none;
   }
@@ -123,9 +123,9 @@
     justify-content: flex-end;
     right: -4.12rem;
     @include media-breakpoint-down(md) {
-      left: -0.25rem;
+      left: 0;
       justify-content: flex-start;
-      margin-left: -56px;
+      margin-left: -4.5rem;
     }
   }
 }
@@ -135,11 +135,12 @@
   clear: right;
   @include media-breakpoint-down(md) {
     float: none;
-    padding-left: 72px;
+    padding-left: 5.2rem;
     padding-bottom: 48px;
   }
   .timeline__point {
-    margin-left: -56px;
+    margin-left: -4.5rem;
+    left: 0;
   }
   .timeline__date {
     left: 0;
