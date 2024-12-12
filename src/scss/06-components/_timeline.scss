@@ -81,7 +81,7 @@
 }
 .timeline__item:nth-child(odd) {
   float: left;
-  padding-right: 48px;
+  padding-right: 58px;
   clear: left;
   padding-bottom: 80px;
   &:last-of-type {
@@ -121,7 +121,7 @@
   .timeline__point {
     right: 0;
     justify-content: flex-end;
-    right: -56px;
+    right: -4.12rem;
     @include media-breakpoint-down(md) {
       left: -0.25rem;
       justify-content: flex-start;
@@ -131,7 +131,7 @@
 }
 .timeline__item:nth-child(even) {
   float: right;
-  padding-left: 48px;
+  padding-left: 58px;
   clear: right;
   @include media-breakpoint-down(md) {
     float: none;
