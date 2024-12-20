@@ -9,15 +9,25 @@ function sortTable(table, sortClass) {
     );
 
     if (valueA !== valueB) {
-      return valueB - valueA;
+      return valueB - valueA; // Primary sort by the main column (e.g., points or save percentage)
     } else {
       const goalsA = parseFloat(
-        rowA.querySelector(".number:nth-child(5)").textContent.trim()
+        rowA.querySelector(".number:nth-child(4)").textContent.trim()
       );
       const goalsB = parseFloat(
-        rowB.querySelector(".number:nth-child(5)").textContent.trim()
+        rowB.querySelector(".number:nth-child(4)").textContent.trim()
       );
-      return goalsB - goalsA;
+      if (goalsA !== goalsB) {
+        return goalsB - goalsA; // Secondary sort by goals
+      } else {
+        const gamesA = parseFloat(
+          rowA.querySelector(".number:nth-child(3)").textContent.trim()
+        );
+        const gamesB = parseFloat(
+          rowB.querySelector(".number:nth-child(3)").textContent.trim()
+        );
+        return gamesA - gamesB; // Tertiary sort by fewer games
+      }
     }
   });
 
