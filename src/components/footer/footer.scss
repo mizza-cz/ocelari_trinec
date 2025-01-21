@@ -15,6 +15,7 @@
     margin-bottom: 52px;
     @include media-breakpoint-down(lg) {
       display: none;
+      margin-bottom: 32px;
     }
   }
   &__partner {
@@ -25,6 +26,22 @@
       height: 100%;
       max-height: 100px;
       object-fit: contain;
+    }
+  }
+  .social {
+    justify-content: center;
+    svg,
+    path,
+    g {
+      opacity: 1 !important;
+      fill: var(--color-light) !important;
+      &:hover {
+        svg,
+        path,
+        g {
+          fill: var(--color-light) !important;
+        }
+      }
     }
   }
   &__bottom {
