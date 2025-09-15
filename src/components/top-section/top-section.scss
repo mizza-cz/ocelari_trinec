@@ -1,5 +1,5 @@
 .top-section__game {
-  padding: 32px 24px 40px;
+  padding: 1.2rem 24px 1.2rem;
   background-color: var(--color-light);
   grid-area: 1 / 4 / 3 / 6;
   margin-bottom: 18px;
@@ -7,9 +7,9 @@
     margin-bottom: 0;
   }
   .title {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     @include media-breakpoint-down(lg) {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
   }
 }
@@ -21,7 +21,7 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     @include media-breakpoint-down(xl) {
       display: flex;
@@ -54,13 +54,18 @@
       width: 100%;
       justify-content: center;
     }
+    span img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
   }
   &__logo {
-    width: 78px;
-    height: 78px;
+    width: 64px;
+    height: 64px;
     @include media-breakpoint-down(lg) {
-      width: 72px;
-      height: 72px;
+      width: 48px;
+      height: 48px;
     }
     img {
       width: 100%;
@@ -137,8 +142,7 @@
 
 .listGames {
   background-color: var(--color-light);
-  padding: 30px 20px;
-
+  padding: 1.2rem 1.5rem 1.2rem;
   position: relative;
   z-index: 5;
   grid-area: 3 / 4 / 5 / 6;
@@ -223,8 +227,8 @@
     }
   }
   &__item {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
     border-bottom: 1px solid #cccccc;
     display: flex;
     gap: 16px;
@@ -241,8 +245,6 @@
     max-height: 32px;
     height: 100%;
     min-width: 2.5rem !important;
-    img {
-    }
   }
 }
 
@@ -307,5 +309,40 @@
       margin-top: 0 !important;
       order: -2;
     }
+  }
+}
+.listGames--bottom {
+  grid-area: 5 / 4 / 7 / 6;
+  margin-top: 18px;
+}
+.listGames--after {
+  .listGames__item {
+    flex-wrap: wrap;
+  }
+  .newGame__logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  .newGame__logos span img {
+    width: 16px;
+    height: 16px;
+  }
+  .newGame__footer {
+    width: 100%;
+  }
+  .newGame__header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .newGame__result {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .listGames__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
