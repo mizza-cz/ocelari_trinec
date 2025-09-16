@@ -6,12 +6,6 @@
   @include media-breakpoint-down(xl) {
     margin-bottom: 0;
   }
-  .title {
-    margin-bottom: 24px;
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 16px;
-    }
-  }
 }
 .top-section {
   margin-bottom: 36px;
@@ -318,22 +312,31 @@
 .listGames--after {
   .listGames__item {
     flex-wrap: wrap;
+    align-items: flex-start;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
-  .newGame__logo {
-    width: 3rem;
-    height: 3rem;
-  }
-  .newGame__logos span img {
-    width: 16px;
-    height: 16px;
-  }
+
   .newGame__footer {
     width: 100%;
+    justify-content: flex-end;
+    @include media-breakpoint-down(sm) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
   .newGame__header {
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+      margin-bottom: 0;
+    }
   }
   .newGame__result {
     font-size: 1.8rem;
@@ -342,7 +345,7 @@
   }
   .listGames__item {
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
   }
 }
