@@ -339,9 +339,19 @@
     }
   }
   .newGame__result {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: 2rem;
     font-weight: 700;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+    &.win {
+      color: var(--color-green);
+    }
+    &.lose {
+      color: var(--color-primary);
+    }
   }
   .listGames__item {
     display: flex;
