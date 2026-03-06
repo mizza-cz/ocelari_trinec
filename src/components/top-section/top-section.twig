@@ -1,6 +1,6 @@
 <section class="top-section">
   <div class="container">
-    <div class="top-section__inner">
+    <div class="top-section__inner top-section__inner--playoff">
       {% include "@components/topstory/topstory.twig" %}
 
       <div class="top-section__game boxShadow boxRadius">
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="boxShadow boxRadius listGames listGames--after">
+      <!-- <div class="boxShadow boxRadius listGames listGames--after">
         <h2 class="title mb-md-4 mb-3">Poslední odehraný zápas</h2>
         <div class="listGames__item">
           <div class="newGame__header">
@@ -65,9 +65,16 @@
             <a href="#" class="btn btn--small">Rozhovor</a>
           </div>
         </div>
-      </div>
-      <div class="boxShadow boxRadius listGames listGames--bottom">
-        <div class="listGames__item">
+      </div> -->
+      <div class="boxShadow boxRadius listGames listGames--bottom p-0">
+        <a href="#" target="_blank" class="top-section__pub">
+          <img
+            src="images/content/banner-playoff.png"
+            loading="lazy"
+            alt="play-off"
+          />
+        </a>
+        <!-- <div class="listGames__item">
           <div class="listGames__logo">
             <img src="images/ico/logo.svg" alt="" />
           </div>
@@ -134,7 +141,7 @@
             </div>
             <a href="#" class="btn btn--small">Vstupenky</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

@@ -28,6 +28,16 @@
       gap: 28px;
     }
   }
+  &__pub {
+    display: block;
+    width: 100%;
+    aspect-ratio: 421/302;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 .newGame {
   &__header {
@@ -357,5 +367,16 @@
     display: flex;
 
     justify-content: space-between;
+  }
+}
+
+// playoff
+
+.top-section__inner--playoff {
+  .top-section__game {
+    grid-area: 1 / 4 / 2 / 6;
+  }
+  .listGames--bottom {
+    grid-area: 2 / 4 / 3 / 6;
   }
 }
