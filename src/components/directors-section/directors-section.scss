@@ -1,6 +1,10 @@
 .directors {
   position: relative;
   z-index: 2;
+  &__inner {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .directorCard {
