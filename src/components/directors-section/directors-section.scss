@@ -5,6 +5,12 @@
     max-width: 940px;
     margin: 0 auto;
   }
+  .col-md-4 .title {
+    font-size: 1.1rem;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.0625rem;
+    }
+  }
 }
 
 .directorCard {
